@@ -44,73 +44,115 @@ li, a {
 
 
 
- .blog {
-  font-family: $body-font;
-  color: white;
-  background-color: $green;
-  border-radius: 14px;
-  display: flex;
-  padding: 5px 25px;
-  justify-content: center;
-  align-items: center;
-  font-size: 11px;
-  text-decoration: none;
-  height: 33px;
-  border-color: black;
-  border: 1px solid;
-}
+//  .blog {
+//   font-family: $body-font;
+//   color: $black;
+//   background-color: white;
+//   border: 2px solid $green;
+//   border-radius: 14px;
+//   display: flex;
+//   padding: 5px 25px;
+//   justify-content: center;
+//   align-items: center;
+//   font-size: 11px;
+//   text-decoration: none;
+//   height: 33px;
+//  }
 
-.blog:hover {
-  /* background-color: #999999; */
-  font-style: normal;
-  color: $black;
-  background-color: white;
-  }
+// .blog:hover {
+//   /* background-color: #999999; */
+//   font-style: normal;
+//   color: $black;
+//   background-color: white;
+//   }
 
   .company {
     font-family: $body-font;
-    color: white;
-    background-color: $green;
-    border-radius: 14px;
     display: flex;
-    padding: 5px 25px;
+    // padding: 5px 25px;
     justify-content: center;
     align-items: center;
-    font-size: 11px;
+    font-size: 12px;
     text-decoration: none;
     height: 33px;
-    border-color: black;
-    border: 1px solid;
+    font-weight: 500;
+    color: $black;
+    background-color: $green;
+    // border-radius: 12px;
+    padding: 0.7em 2.4em 0.7em 2.1em;
+    border-radius: 20em;
+    letter-spacing: 0.05em;
+    background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+
   }
 
   .company:hover {
     /* background-color: #999999; */
     font-style: normal;
-    color: $black;
-    background-color: white;
+    color: $white;
     }
-
-
 
     .student {
       font-family: $body-font;
-      color: white;
-      background-color: $green;
-      border-radius: 14px;
       display: flex;
-      padding: 5px 25px;
+      // padding: 5px 25px;
       justify-content: center;
       align-items: center;
-      font-size: 11px;
+      font-size: 12px;
       text-decoration: none;
       height: 33px;
-      border-color: black;
-      border: 1px solid;
+      font-weight: 500;
+      color: $black;
+      background-color: $green;
+      // border-radius: 12px;
+      padding: 0.7em 2.4em 0.7em 2.1em;
+      border-radius: 20em;
+      letter-spacing: 0.05em;
+      background: linear-gradient(0deg, #14A73E 0%, #4FEC97 100%);
+
     }
 
     .student:hover {
       /* background-color: #999999; */
       font-style: normal;
-      color: black;
-      background-color: white;
+      color: $white;
       }
+
+
+
+
+
+
+
+/* CSS */
+.blog {
+  display: flex;
+  align-items: center;
+  font-family: $body-font;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 0.7em 2.4em 0.7em 2.1em;
+  color: black;
+  // background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  // background: linear-gradient(0deg, #2BAA50 0%, #4FEC97 100%);
+  background: linear-gradient(0deg, #4FEC97 0%, #4FEC97 100%);
+
+}
+
+
+.blog:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+  color: white;
+}
+
+.blog:active {
+  box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+}

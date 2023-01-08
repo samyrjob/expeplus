@@ -1,0 +1,111 @@
+<div class = "home-banner">
+</div>
+
+
+<div class= "carre">
+  <div class="content-carre">
+    <div class="title-button">
+      <h3> Trouve ton stage en quelques clics ! </h3>
+      <a href="#" class="home-button">Voir les offres </a>
+    </div>
+     <%= video_tag("videoexpeplus.mp4", {:size => "500x350",:poster => "poster.png", :controls => true, :type => "video/mp4"}) %>
+  </div>
+</div>
+
+
+<div class="carre2">
+  <div class="partners-double">
+    <div class="container-partner">
+      <div class="top-description">
+        <h3>Nos étudiants viennent de ...</h3>
+        <p>Vos écoles sont attractives à l'international !</p>
+      </div>
+      <div class="logoss">
+        <div class="grid-logos1">
+          <%= image_tag("escp.png", {:style => "width:75px;height:75px;"}) %>
+          <%= image_tag("ecole4.png", {:style => "width:75px;height:75px;"}) %>
+          <%= image_tag("ecole3.png", {:style => "width:75px;height:75px;"}) %>
+          <%= image_tag("ecole5.png", {:style => "width:75px;height:75px;"}) %>
+        </div>
+        <div class="grid-logos2">
+          <%= image_tag("ecole2.png", {:style => "width:75px;height:75px;"}) %>
+          <%= image_tag("ecole7.png", {:style => "width:75px;height:75px;"}) %>
+          <%= image_tag("ecole6.png", {:style => "width:75px;height:75px;"}) %>
+          <%= image_tag("ecole1.png", {:style => "width:75px;height:75px;"}) %>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-firms">
+    <div class="top-description">
+        <h4>Entreprises partenaires</h4>
+      </div>
+      <div class="grid-logos3">
+          <%= image_tag("celio.png", {:style => "width:75px;height:75px;"}) %>
+          <%= image_tag("glovo.png", {:style => "width:75px;height:75px;"}) %>
+          <%= image_tag("ey.png", {:style => "width:75px;height:75px;"}) %>
+          <%= image_tag("lydia.png", {:style => "width:75px;height:75px;"}) %>
+          <%= image_tag("llidia.png", {:style => "width:75px;height:75px;"}) %>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-slider">
+    <div class="slider">
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+
+        <%# slides %>
+        <div class="slide first">
+          <%= image_tag("bcntruetrue.png") %>
+        </div>
+        <div class="slide">
+          <%= image_tag("lisbonnetrue.png") %>
+        </div>
+        <div class="slide">
+          <%= image_tag("fontaintrue.png") %>
+        </div>
+        <div class="slide">
+          <%= image_tag("dublintrue.png") %>
+        </div>
+
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+
+      </div>
+
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="home-banner1">
+</div>
+
+
+
+
+<script type="text/javascript">
+  var counter = 1;
+  setInterval(function(){
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if(counter > 4){
+      counter = 1;
+    }
+  }, 5000);
+</script>
