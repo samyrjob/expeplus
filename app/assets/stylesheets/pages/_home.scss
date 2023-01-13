@@ -2,7 +2,7 @@
 .home-banner {
   width: 100%;
   height: 645px;
-  background-image: url("bcnbcn.jpg");
+  background-image: url("bcn1.png");
   background-size: cover;
   background-position: center;
   z-index: auto;
@@ -25,47 +25,43 @@
   height: 1288px;
 }
 
+.carre1 .contentcarre {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.carre1 p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  // text-shadow: 1px 1px 3px rgb(0 0 0 / 20%);
+  margin-bottom: 32px;
+}
+
+.carre1 h1 {
+    margin: 0;
+    margin-bottom: 32px;
+    color: white;
+    // text-shadow: 1px 1px 3px rgb(0 0 0 / 20%);
+    font-size: 32px;
+    font-weight: bold;
+}
+
 .togo {
-  position: sticky;
-  top: -1px;
   z-index: 4;
-  margin-left: 20px;
   border-radius: 0.25rem;
+  bottom: 120px;
+  height: 244px;
+  width: 400px;
+  position: relative;
+    left: 455px;
 }
 
 
 
-  .content-carre {
-    z-index: 1;
-    position: relative;
-    top: 0px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 535px;
-    justify-content: center;
-
-    .title-button {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      h3 {
-        color: white;
-        margin-top: 20px;
-        margin-bottom: 30px;
-        font-weight: 500;
-        font-family: "Fira Sans", "Helvetica", "sans-serif";
-      }
-      a {
-        margin: 0;
-      }
-    }
-
-
-    video {
-      margin-top: 10px;
-    }
-  }
 
 .carre1 {
 
@@ -74,6 +70,9 @@
   width: 100%;
   height: 645px;
   top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -181,7 +180,7 @@
     height: 645px;
     z-index: 3;
     top: -2px;
-    display: flex;
+    display: block;
     align-items: center;
 }
 
