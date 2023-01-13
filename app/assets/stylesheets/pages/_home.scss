@@ -2,7 +2,7 @@
 .home-banner {
   width: 100%;
   height: 645px;
-  background-image: url("bcn1.png");
+  background-image: url("bcnbcn.jpg");
   background-size: cover;
   background-position: center;
   z-index: auto;
@@ -13,15 +13,25 @@
     // transform: rotate(180deg);
     width: 100%;
     height: 645px;
-    background-image: url("bcnbcn.png");
+    background-image: url("dusk.jpeg");
     background-size: cover;
     background-position: center;
     z-index: 0;
     position: absolute;
-    top: 746px;
+    top: 744px;
   }
 
+.carre {
+  height: 1288px;
+}
 
+.togo {
+  position: sticky;
+  top: -1px;
+  z-index: 4;
+  margin-left: 20px;
+  border-radius: 0.25rem;
+}
 
 
 
@@ -32,17 +42,22 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    height: 535px;
+    justify-content: center;
 
     .title-button {
-      padding: 15px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
       h3 {
         color: white;
         margin-top: 20px;
         margin-bottom: 30px;
+        font-weight: 500;
+        font-family: "Fira Sans", "Helvetica", "sans-serif";
       }
       a {
         margin: 0;
-        margin-left: 130px;
       }
     }
 
@@ -52,12 +67,13 @@
     }
   }
 
-.carre {
+.carre1 {
+
+  background-image: linear-gradient(to bottom, rgba(255,0,0,0), $blue);
   position: relative;
   width: 100%;
   height: 645px;
-  // background-color: $blue;
-  background-image: linear-gradient(to bottom, rgba(255,0,0,0), $blue);
+  top: 0px;
 }
 
 
@@ -85,19 +101,16 @@
 }
 
 
-.container-partner {
-  margin-top: 0;
-  margin-left: 50px;
-  margin-right: 150px;
+.container-schools {
   background: white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  height: auto;
-  padding: 30px;
-  background-position: center;
-  background-size: cover;
-  display: grid;
-  justify-items: center;
+}
+
+.container-partner {
+  margin-left: 100px;
   border-radius: 0.25rem;
+  margin-right: 65px;
+
+
 
   h3, p {
     color: white;
@@ -112,14 +125,14 @@
   }
 
   .logoss{
-    padding: 10px;
-    margin: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    // padding: 10px;
+    // margin: 10px;
+    // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 0.25rem;
 }
 
     .grid-logos1 {
-    --gap: 16px;
+    --gap: 47px;
     --num-cols: 4;
     --row-height: 60px;
     box-sizing: border-box;
@@ -133,30 +146,14 @@
       transform: scale(0.9);
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
       cursor: pointer;
-      border-radius: 9px;
+      border-radius: 0;
+      // transition:1s;
+      // transition: all .3s ease-in-out 0s;
     }
 
     }
 
-    .grid-logos2 {
-    --gap: 16px;
-    --num-cols: 4;
-    --row-height: 60px;
-    box-sizing: border-box;
-    padding: var(--gap);
-    grid-template-columns: repeat(var(--num-cols), 1fr);
-    grid-auto-rows: var(--row-height);
-    gap: var(--gap);
-    display: grid;
 
-    img:hover {
-      transform: scale(0.9);
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      cursor: pointer;
-      border-radius: 9px;
-    }
-
-    }
     }
 
 
@@ -172,58 +169,27 @@
   }
   }
 
+  .carre3 {
+    height: 645px;
+  }
+
 
   .carre2 {
+    background-image: linear-gradient(to top, rgba(255,0,0,0), $blue);
     position: relative;
     width: auto;
     height: 645px;
-    background-image: linear-gradient(to top, rgba(255,0,0,0), $blue);
     z-index: 3;
-  }
+    top: -2px;
+    display: flex;
+    align-items: center;
+}
+
 
 
 
 .partners-double {
   display: flex;
-  padding: 10px;
-  // align-items: center;
-  position: relative;
-  top: -38px;
-
-  .container-firms {
-    background: white;
-    background-position: center;
-    background-size: cover;
-    padding: 28px;
-    margin-right: 50px;
-    border-radius: 0.25rem;
-    height: 176px;
-    h4 {
-      color: black;
-    }
-  }
-  .grid-logos3 {
-    height: auto;
-    padding: 20px;
-    padding: var(--gap);
-    display: grid;
-    grid-template-columns: repeat(var(--num-cols), 1fr);
-    grid-auto-rows: var(--row-height);
-    gap: var(--gap);
-    --gap: 16px;
-    --num-cols: 5;
-    --row-height: 60px;
-
-
-
-    img:hover {
-      transform: scale(0.9);
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      cursor: pointer;
-      border-radius: 9px;
-      // transition: all 0.5s ease-out;
-  }
-  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -233,11 +199,19 @@
   }
 }
 
+.logos {
+  filter: grayscale(100%);
+
+}
+
+.logos:hover {
+  filter: grayscale(0%);
+
+}
+
 
 .container-slider {
-  margin: 0;
-  padding: 0;
-  height: 33vh;
+  margin-left: 63px;
   display: flex;
   justify-content: center;
   align-items: center;
