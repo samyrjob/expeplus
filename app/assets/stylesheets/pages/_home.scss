@@ -57,7 +57,9 @@
   border-radius: 0.25rem;
 }
 
-
+.poster{
+  display: none;
+}
 
 
 .carre1 {
@@ -345,6 +347,12 @@
     .second .container-partner{
       background: none;
       background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgb(8, 21, 90));
+      .togo{
+        display: none;
+      }
+      .poster{
+        display: inline;
+      }
       .description{
         background: white;
       }
@@ -355,6 +363,8 @@
     }
 }
 
-
+.home-banner1 {
+  height: 689px;
+}
 
   }
