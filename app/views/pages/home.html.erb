@@ -13,37 +13,45 @@
 
   <div class="carre2">
     <div class="partners-double">
-
-      <div class="container-partner">
-        <div class="logoss">
-          <div class="container-schools">
-            <div class="grid-logos1">
-              <%= image_tag("ememlyon.png", {:style => "width:50px;height:50px;", class:"logos"}) %>
-              <%= image_tag("audenciafond.jfif", {:style => "width:50px;height:50px;", class:"logos"}) %>
-              <%= image_tag("icntrue.jfif", {:style => "width:50px;height:50px;", class:"logos"}) %>
-              <%= image_tag("sorbonne.jpg", {:style => "width:50px;height:50px;", class:"logos"}) %>
-            </div>
-            <div class="grid-logos1">
-              <%= image_tag("kedgemarseille.png", {:style => "width:50px;height:50px;", class:"logos"}) %>
-              <%= image_tag("ipagipag.svg", {:style => "width:50px;height:50px;", class:"logos"}) %>
-              <%= image_tag("hec.png", {:style => "width:50px;height:50px;", class:"logos"}) %>
-              <%= image_tag("insa.png", {:style => "width:50px;height:50px;", class:"logos"}) %>
+      <div class="first">
+        <div class="container-partner">
+          <div class="logoss">
+            <div class="container-schools">
+              <div class="grid-logos1">
+                <%= image_tag("ememlyon.png", {:style => "width:50px;height:50px;", class:"logos"}) %>
+                <%= image_tag("audenciafond.jfif", {:style => "width:50px;height:50px;", class:"logos"}) %>
+                <%= image_tag("icntrue.jfif", {:style => "width:50px;height:50px;", class:"logos"}) %>
+                <%= image_tag("sorbonne.jpg", {:style => "width:50px;height:50px;", class:"logos"}) %>
+              </div>
+              <div class="grid-logos1">
+                <%= image_tag("kedgemarseille.png", {:style => "width:50px;height:50px;", class:"logos"}) %>
+                <%= image_tag("ipagipag.svg", {:style => "width:50px;height:50px;", class:"logos"}) %>
+                <%= image_tag("hec.png", {:style => "width:50px;height:50px;", class:"logos"}) %>
+                <%= image_tag("insa.png", {:style => "width:50px;height:50px;", class:"logos"}) %>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="description">
-          <p>Vos écoles sont attractives à l'international !</p>
-          <div class="buttoncard">
-            <a href="#" class="blog">Mon Espace Etudiant</a>
+          <div class="description">
+            <p>Vos écoles sont attractives à l'international !</p>
+            <div class="buttoncard">
+              <a href="#" class="blog">Mon Espace Etudiant</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="container-partner">
-        <%= video_tag("videoexpeplus.mp4", {:size => "342x216",:poster => "poster.png", :autoplay => true, :muted => true, :controls => true, :type => "video/mp4", class:"togo"})%>
-        <div class="description">
-          <p>Entreprises de la French Tech ou Autres ...</p>
-          <div class="buttoncard">
-            <a href="#" class="blog">Mon Espace Entreprise</a>
+      <div class="second">
+        <div class="container-partner">
+          <%# <div class="video-player"> %>
+            <%= video_tag("videoexpeplus.mp4", {:size => "342x216",:poster => "poster.png", :autoplay => true, :muted => true, :controls => true, :type => "video/mp4", class:"togo"})%>
+            <%# <div class="player-controls">
+              <button class="play-button" title="play"><i class="fa-solid fa-play"></i></button>
+            </div>
+          </div> %>
+          <div class="description">
+            <p>Entreprises de la French Tech ou Autres ...</p>
+            <div class="buttoncard">
+              <a href="#" class="blog">Mon Espace Entreprise</a>
+            </div>
           </div>
         </div>
       </div>
@@ -112,4 +120,19 @@
       counter = 1;
     }
   }, 5000);
+
+// const videoPlayer = document.querySelector('.video-player')
+// const video = videoPlayer.querySelector('.togo')
+// const PlayButton = videoPlayer.querySelector('.play-button')
+
+// PlayButton.addEventListener('click', (e) => {
+//   if (video.paused){
+//     video.play()
+//     e.target.textContent = 'I I'
+//   } else {
+//     video.pause()
+//     e.target.textContent = '>'
+//   }
+// })
+
 </script>

@@ -18,6 +18,12 @@ li, a {
   align-items: center;
 }
 
+@media screen and (max-width: 500px) {
+  .navbar {
+    width: 100%;
+  }
+}
+
 .logo {
   cursor: pointer;
   height: 90px;
@@ -208,4 +214,17 @@ ul li:hover ul.dropdown {
 
 .blog:active {
   box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .navbar{
+    height: auto;
+    .navbar-content {
+      padding: 10px;
+    }
+  }
+
+
+
 }
